@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LEGO Star Wars Legends</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFkAAABaCAYAAADTn/oBAAAABGdBTUEAALGPC/xhBQAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+kMFxQ7IZ5VlgcAABZ7SURBVHja7ZxrjG1neZif97ustfZ9budujrHxDQyU1oCUoFZBSJRIlZJWzY9QqaVSFSkUxM9I7Y+KpGoq8adqK6VBqhQ1vYgfNApEVBCa4BoBgTQKhRCIAtjY5hz7nDlz2be11nd5+2PtOR4Pc4w99gFf5h19WqM9e89e8+x33vv3wamcyqmcyqmcyqmcyqmcyqkcFXkZv5+eQn7x7yHPE6yeQn7+v19ucT0OqB4DV08hPzdcOfL9caD1CFw9BraeQj4e7sFj5shjh392GGw+BDe/GkC722wW5BBcA5i//+4H/q4h95KqGCOCCCj6P//oO59eQT28joJ/zZqLW2nvs+B+4O+99X2vX8u/csewea8bVR0zZyEmvvo9+eiilUetkfyff//rnwLSoZWP0Wh9rWjyreDeBAuYf/wLD9330Ovk375uXL/XFQ5xnmXboijeWWKrvP3i9F+dO3eWrzzqfgPwhz6gw5JfqeZCXkLAz9Lc9/3tN07+4Xvu/LV7hru/ik1FURWY0oMR0Ey9bKmcp1m2LPZmrI/G/J/v+X8zbfj+b3z84U8DYbUSEI9o9CsKtnsRgI/TXtvvFfbXf/Vd73/T5vyjW6/P51g41HjE2c48CIw31+kJNEG58ehTyKAi5cS77kz/4kuP935zpc2HbbFZXeW14PjkFrbXAPZffvA973zoXvnYpbX4ULuf0cUCeiV4h7YBZ+D8+XWqXoUf3cv1x69z7dq3WZ+MMdZiyoIEdnVfhx3g0bDvVWuTb2Ui7Af+wTsvvPuhya/fd2d8v6YkqhBFmU9nrBUOa4S1zQHDYR9XrjO4/F5MdZlHv/Rxrl6dc+bCWdCMihJV7UqT02Hbfgi2vtJgn9RcCGDe9qbXVf/sF+/78IOXlr/m3XSUcoH1jtQEqvGQOK+ZnF1jbW1AWQ2o1t+BHTyAGMd0Z5f/91c3KCJoVZAWCxZNTdLK0GmzPQRYeAWLO6GZMID56D+980/7xfa95WDActFSJGVZT3GlYzAZcced56iqHtWZhyjW34FQ0i5r5ns3mM9r1DiG586gIaECzkDOWY5o8HEJjL7abbIA8sZ7LlRb48G97dygTY+qGEFRMKDlzJkJo8kYU52jf+5nsb0t2sWS6e5VmkWk6nvKsmR93IfWowqxbSkHJW3TyDFweSVr80lssgHMv37/m76qMibXymM/uM50tmA88kzGnvn1lst/6+2sbz3I7nZiPn0CVaU/dKxtrqGamc8XqDUsnt4mrwt+PEJjizVWXk2Any/kYx3e8vqVe7/12GPs7s6JWXnLgxfZ3Jpw/sG/w+Y9P0OMmXYRyBkGQ4e1FussSgZRUtuS64bKexiO0JTZf3qfnPrcor7Ba0WTb0IuvNI/M+DiHesUhePuN9/J2bf9MuXoDDFD3NnDlQ4jgqqCZnKMaG4REaw11MuGYVGQ5y3bV6/hCk+MiVebnNgmn72wDv0KmoadnRv81TfnrD+o5PkuOUGMNYKQBUQEEQOioErOihoBhaefuIYLcwbDPuPRGOMirwYTcVjMSWNk9Z44n5NzwleeoJmkiRRacluTY0AkdxqcEqiuFmjO5DZQFJb5vMF7y+TiFmpT90G8ysSc0FyIYghBoexRVQNCgJwyikFV0AyaV9cEqgZVQ46KiAURRITRqMfm5gSdT9Ec0Zhf05CfBTw2czCJ1C6QnsX3/M1aZGialS3O3ZKMksAKGIhtQJNixEO01G0miSVZSK9CTT5xqVMqh42QVaGOOFtgxBCXNaFtscbhxCHGYBA0JXKOxBAJTUvGdmFdr6IoSkgJjL6KetQvgSaHUBNzQoxFXQm2QtvEcm+GxXRpWUyQumxOUXIIaAx4Z0khMtubcuP6PtoqWlRo9mjKp5p80wkKKw1VEIO2So4R5/3NkC0pZDIGJcdEDAEQrAjGgBUhNpHdp24wqvuYtR5Ydwr5mX8BB5MxOg0QIe7M2d/ZwVqHsw5feMQImjIhBmIIaFacc8QQyWIpC0u/KpjtLZhOF1S7nnY+OoV8IDk5uDrl6R9ep/IVvbKHcw5jDEakSzxWX4giKGIActc7TZGmabDeMJ4MCTkync9ZLv0p5AN57BuPE2LCiCATR3/iKHqexf4M7wo0ZTIZEUWsYJ1FxHRhmio5Kiknyn5BtT6g0kxvbUC/4RTygaz1J1hv6J1dg6Ymo6i3pBxJi4izFl92JiNpQjUj1oCCiCU3LSFHnKzCvjaQTPez0+hiJX6ilFuG+f7T5IknlwZtljhrMYYuA0HR1TuoKjlncoqk0BCaBWISri8EraFUTAEhndYubopKB64aVmjTcv2HOyxnc6xxkDNJFWkDVi0pJ0TA5EzOCesdqooVA2IgZtqYsN52DvUUcie2KMgCKUTaeeha/aZzckkjKSSSRqy6LmEhI8aAZsQIOcVuOgAD2UDKWO9RMaeQDyQ5S24D80VLzsraxhjnHbGN+MJjRMAK1lssSlbBiAFxhKYmhtDZqjaRgiUnJYVMSqdp9TMhXBNZ1gHvuppFjIkUa3LOpJjJWVfNuISSyZqxxmCcpW2XpBQQA6EOLH2XntfLQKiLU8gHEqNircN7R8qZtmlJKZCzkmJEEFBD1thBzorIak5Fu5kV6wzBAE4wGEJIxHyaVt+U0CTKXkloIpiM0kHMqSWlhDVdq0myoKLP1C9UwIJKRgrBeIMtHYhQFu7VmFWfHPJ0WqMq5JzxpSWlRM6JlCKaM11aJ6uiWjchmzVDTjcL+aqZkDMhZRLP1JlPIa9kcr5HvWzBQFPXjPt9cojkkCFlco6QO6ucRREj3TycdFXnZb1ExZBEyU6JMaDSIKZ/q6LUcaNar4gZjJPHyf0+OmupyoIcBCho6wRiaWOL9+Zm9pY0oRFMSohYBENqE1pHtBFoLCZ3tY2Ufmxv7yjY26H6+rKA3F7bw/uC5CuuXr3O5kQRFXZ393GFgrVYzSCQ9MBouFXBSOgG5sCrg2SRkMhkchfCHZ1YOgpUbgeM5/jg9KcC2fQq1DhmV3YYlD20hRwyJkNuMxgLtsvo7MH8tnZ2mhRIMZJywjiLGiVoIuaAZnOciTiYKsqHri+lFv+4rW0v6kM9uS+3HmY1i0XLeDCg5yqMMfTKisVs2kUPKEgir+oWKXcOT8QQ2kAIAecUHEixKozKLQEfXA/PK98u83DU3r+oSdITQ3bLmp29GRfOrtHWkUHPgSZyCpRFgROLrpKSzCrayF2Js/Cmq9JZiytKisrjCyhweO9+ZO55tfKRP/R2TNwft71NnwP+7YVc9nuYvTnVoKTqlXiFGJdUvQIr0tnilfYa43C2ywxTm7DW0dQZLw6bHb6xZHwXa6s5DrA7VDVMtxHwcVvdjtsU9IJAnzxO3p8zHg3w3rH91DX6VcF4c0JOiaZeIKarVRgsznlEHDkkUhvxvsBbS25BppmQu4QmqUASed/P3P+OwtvgnIvOmOCcjUbIOefsvM3WGYwR1awgrJoBSk6AKkb05pCMdC/shmoAY+SmhTVdCnrwuApCHXT3v3zqq19fPZxWQA9veXvBoE8MeRgK+usj6umCYX/MZH2IdZ6cM857hK6qhnSJirGmGxloAlI6BhtruKHHmILxHRuExZRKEr9wb/+De1dvMBlOmE4XQMFo8w6u/+CHbJ3poRqJbcKfnTC/8hhV5bGjDdLukqeubjPoV5RlV+XzZYF3jpACO7v7jCZDisIyWy5xblW8ch10JbOIsvfIXxcf+JVfete7l03a/d1PfeXPeWarm6yuLxj0iSGP1wbsT/cw3jLZmrCcTlFRiqoiNZ0Tc853exCMxVpHDJmyLPC+oLUlo2Gf2fwa0nSjWtY7RAyb65vEoPjCMxxNaGa77M922Tzj8JMhdq+mvbaHwVJWQ6hb5ssF/Z6j6lushZQ9xtuuEmg8ZVVSliXGGPqVYkwH2TmD0rXCLGHy8/el38vFcO/3/+/0l+i2VRz4iMgJN26euHh7fec6axtDxms9DJG1rRFF4Ug5YL3HWY9Y10XH1mGMBVWKskS8xZBJKdHUNct6AWSMA6uKNRWz/Zr1tTV8v2A6vcHGRoVIxDuhHI7ZuTGjVwzxvRFh2ZJiYG2toD+w9EY9ykGv21qhINbSGwwYjMb0+gPGwwlV0cepg2ixyVBowdCPGA3W8clSerf+yz//zr+5An14e8ULHuk9uePrOcQLTWjwRUE5LDFWKIoCDamzlQeB7cpUGANlUUHhsfMlhsjZjQGXLmzhK4spDfg+mA1MNGxcvsDOY99D04IH33w/MS7wwwF7T0xJdUu/3KKPITrL2a0xm+eGXTOgNyRnA1lpmoARIbSRwaBPPV/ircdai3gHxqB1zY0bO+zvzEhhSg46eddYPv7ZhflHK0Z6KEY/GnX8WJNx8s6IdyyWS7YunKVtlsS6xUw2aJ+62gG1FhVFBKz1iBisKzBlBQreGe6/5zJbk/spN8ZAAMngeuRdpfcGy+aFLSaF5/Ld9zK5dAfEBfg+Nj/KWyebnL2wSRuWrJ09x2g8pBgamsUM4/tYV2F8sfJqFtoA1rLc3Se2bZfRaKatG3ZnDW0ttLNIWZQUg5K0zIIEt9LkfCiMPLzl7fY6vkuXX8d8NmX76eucu/MO/KCPiYlqNCHM5jjvSZowzmGLArJSVgaxljifI6pcuPs++uMRYpScAikHVIU4iqyN1/C9inPn7wIMuW0xhYEMo8twbrBG1S9o6iXWeqrBECTj6xm+Gt78b85tIKVI29YIBiMlPetxvsQaw3K+IPavc/XKn7G5ucVw2O92Z13ZRjXYW5iKn1CPD2F8/jzL7z/K3lPbnLtUYrMgrqKVObbwaATnPVhHDmHVZI2EnEkx0dYNOSTaUHfZnkZSzvQGE4w1LGZzdLpktjtDjKGsHKFtuHZlnzPnDU1tSDGAWpazBtVMbBva+gpGDGJMN4qAIWumrHqkmLBeCHVm+8YNvv/4Vb7wuUd4/djz9jffhfMOVDBG0G5P4XNtErq90YUqeFtw6a1/A3Z2eeyvv8/k8lsR6e5FrMOQMd6DGFIIiLWE0FKUFe2yhqwYbyl8hXEWY2XVkDXgCjCO+fUb7O/OOH/pMjkvqeuG8VqPycYW2IDGyGK/ZjFfdM3b0FKVHu8svii7+zGGFCO+rLp6tyrT2YKntqf8yRe+yl1jx9vfejfDUY8YEvP9OeVqGoqXYJPQiSFXvS3yssWQ2Xt0m95MkBYGG2uoCYgXsvFIUdFMZ5TVBBY1pe8z3X6aatCjGA0Rb9FQk1LAWIsY10VLq4RCpOXsxTHONvj+gNQu6I/GiMnkDCoO2/cMR31SDFixHOQbbbvE+5Ksioog3pBV2duf8uRTN/jyH3+Ji0PhgbvvACPMFw3GGOZGpv/12/sf/OTnvvKXL0UZ9OS1C1GiWNJ0waKuqXp9iqpHjhFTGkw1xCzmEBK93ghtIk29hJTxRUlvMEaqipwDxhzSuhhQ8asuicVYj8EixmLEUPT6tKHpzNFKr6qqjyoURUloGoqyJOeMxAhicd7hCzCuYLa7x5NP3eCRP3yEi33hbW+6n9F4REqRnLqUXwYjnJsrzz6Z4LgTCm6v4zPGUHjPznRGBIbr61SDISG2pBBxAaxahA7OdLoLKaNJ8b2KVasP4wuss11zNSUyBsSC8UgGYz2FLxEMGIMrCmJoMM5BCoQYsEbIKeHKITkGkuauyVtWXUdmNcuxv7fHk1e3+dojX+PujR4P3HOJ4WjQ2e4sZBFmQae/9fBj//wTn/niX/DMoSbpFgWj2+z4nEecQ4Hh+oThxhrOlyhgiwE5JJzrgy+grrHGdREAEFM3p5xCxKjBGIsiqNDBE4dxRfc7fEnRG3UOPkccirFdBimGg7nRLpKIAWNdF9AWJYUvVp5J2bm+zQ9+eJUv/vGXuGdrwNve8gaqfkVsAylEhv0ecymm/+mTf/bhT3zmkb9YZXiJHz1F5gXDPglkBdQNhiz39kGF9XPnKcfj7o9zHmM9IbSkGLFt28Wu1pE1I85S9rqjF0JY0iwWOF9Q9gbguxCtaZYYAylmYkyEtkXEdhOhKK4sSZpxrsSX/W43VUzU8ynWl7iy7LJNzati1j5PXrvOF//oy5zpKfe84QJRM8vlkrZtCU1DanrT//j5b37kE3/w8AHgwyvdwmxwW6ML1xuyePwKhSuZbGxwY3uX+RNP8PjV7a4wZA3atMS2JbQ1vihQwBVFlyTkRNu05BRxzndpt3R1DkQQ49AQCG2LEdvtBTTSJTmaCaHFOot1HlTRlFnMpjhf4IoSsaab+EdZNi1/+bWvc3lseeN993Hh0kXm0yki0O/32J010//wme985BN/8PA3u6yIlmdOjok/DU3uGklqaOuW9TNbSOGJBr7xvz/Pw3/+PaRw2EEPZkuoW/b39nClx5aectAHY2iXDfV8SWk9ZdUntC3LEKh6FUWvIjeBxbyGDIXv6jTGCq7fQ2PDfLHEF5ayKMlJmU8XLOY1k8kIVzmss6spJuUNlzZ5y13nufPOs4zGY8R1xSjnDK0U03//uW995H98+gvfXMFtj4A+rMn5dtvkZ3UL0qIGVQbDISFFNs6s8573/iw/93MP0ZpEaGpM3TDcOEv91BVCjowuXSSmzm5qVJrdKSYJ1XgLVFnUC4x3VP0+2088wd6NPdYnm6xtbHaTSTlSDPrMpjtkVfrjAc6V5Dbx5GM/oF8N2bxwgZgWRI3UyxpjhPHGOqgy39slp4hg6fcr5tjZb/63P/3I7/7e5w8Dbo8Ajs+hxc8LuLyA5xzuVHig+PLH/sm18xcvYEtDmxbgFY+w3NmHmBltbpFzYNEsKHolrnCYqgTNtIslzhS0y0xphyynLbPdBbtPX8NJxGhibWsTMYa2rWlCw/rmGfqjIXt7O6ydPYemhFQVs+1tlos5Z+68i+WNbXIO5BixRVcAKooC5wuWzYIcI4PhiN3pcvaxT3/rw7/zyc8eNhFHIYcjjk85wale7iRO7+DNSjHUe1MGkwFOpXNeWamZ0RsNEM2ENhCbFu89btLvXuotlfUgHsk19WzO4999lLZOnD93kX7fEeolRVURQ0QRYhvZ39tjur9Pfzykmc3o9QddHGwMOSb2r1zBGAjtHGsMvbKHrUo0JdpmTootvV6fpZjZv/tf3/nQ73zys99YaWp7BHQ4Jro4Ufj2QjVZDmnzQXWqAIrv/taHHm/ahsFoRN0u6K8NiKlLPgajYdcCIlFsrnX3myMaIzEoGsBpj0e//V0WO0vuuf8BRDL1cokYaJualLrtaWW/37UnUkTEsLa5QQyBvb0d2rbBe8e5CxdpmilGoFxbA2to9veZTfdpxE9/++Effui3//unD0cQ4ZgVb2GLT9RblBfwvINljwF9cHWrdeIC922cBjocfh1oZzwE9VbRxIs+XfGFOj45VE9N/Oihpgc3fhgy/PSPVXiWmTuUxR0XD7/kx1e6E2pFPtJY1EM3/uPKgz8tLeYYyOkWWV06aSTxYiAfN1GTjmhJ5vhTsHiZmIujkPMR4PkY7X1J5jvkhM/9kbM5ufURY7wMNPno8Eo+AlyPgfuSDdDIi3j+cbNqz3VAk7xMNJnngHpbDsSWF/ma53uU+stF9BYjWfocH8hPBTLPoaWvhHPcfhzQl3zmWW7T618JkF90W+knBfmVApafNNhTOZVTOZVTOZVTOZVTOZVTeW75/2yUpJXWmJeUAAAAAElFTkSuQmCC">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #070b14;
+      --panel: #0e1626;
+      --accent: #ffd700;
+      --accent-soft: #ffea8a;
+      --text: #e8ecf3;
+      --muted: #9aa4b2;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      background:
+        radial-gradient(circle at top, #101a33, #05070d 60%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      padding: 24px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #0f1830, #0a1020);
+      border-radius: 18px;
+      padding: 32px;
+      box-shadow:
+        0 30px 80px rgba(0,0,0,0.6),
+        inset 0 0 0 1px rgba(255,255,255,0.04);
+    }
+
+    .banner {
+      width: 100%;
+      max-height: 260px;
+      object-fit: contain;
+      display: block;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-family: "Orbitron", sans-serif;
+      font-size: 2.6rem;
+      margin: 0 0 12px;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: var(--muted);
+      max-width: 700px;
+      margin: 0 auto 28px;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 16px 26px;
+      border-radius: 14px;
+      font-weight: 600;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 220px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: linear-gradient(180deg, #ffe066, #ffc400);
+      color: #1a1a1a;
+      box-shadow: 0 12px 30px rgba(255, 215, 0, 0.35);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 40px rgba(255, 215, 0, 0.5);
+    }
+
+    .btn-secondary {
+      background: #121b33;
+      color: var(--text);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .btn-secondary:hover {
+      background: #18244a;
+      transform: translateY(-2px);
+    }
+
+    .downloads {
+      margin-top: 12px;
+    }
+
+    .downloads h2 {
+      font-family: "Orbitron", sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .download-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    footer span {
+      color: var(--accent-soft);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+
+      <!-- Banner -->
+      <img
+        src="LSWL/Title Screen.svg"
+        alt="LEGO Star Wars Legends"
+        class="banner"
+      />
+
+      <h1>LEGO Star Wars Legends</h1>
+<p class="subtitle">
+  LEGO Star Wars Legends is a fast-paced fight simulator platformer.
+  Battle enemies, jump through levels, and play instantly in your browser —
+  or download the full game for your system.
+</p>
+
+
+      <!-- Main Buttons -->
+      <div class="buttons">
+        <!-- Play in browser (NO DOWNLOAD) -->
+        <a
+          class="btn btn-primary"
+          href="LSWL/LEGO Star Wars Legends.html"
+        >
+          ▶ Play Now (Browser)
+        </a>
+      </div>
+
+      <!-- Downloads -->
+      <div class="downloads">
+        <h2>Downloads</h2>
+        <div class="download-grid">
+          <a class="btn btn-secondary" href="LSWL/LEGO Star Wars Legends (Windows 64-bit).zip">
+            Windows 64-bit
+          </a>
+          <a class="btn btn-secondary" href="LSWL/LEGO Star Wars Legends (Windows 32-Bit).zip">
+            Windows 32-bit
+          </a>
+          <a class="btn btn-secondary" href="LSWL/LEGO Star Wars Legends (macOS).zip">
+            macOS
+          </a>
+          <a class="btn btn-secondary" href="LSWL/LEGO Star Wars Legends (Linux).zip">
+            Linux
+          </a>
+        </div>
+      </div>
+
+      <footer>
+        Not affiliated with LEGO or Lucasfilm. <span>Fan project</span>.
+      </footer>
+
+    </div>
+  </div>
+</body>
+</html>
